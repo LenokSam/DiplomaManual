@@ -1,0 +1,125 @@
+.consultation {
+    border: 1px solid $consBorder;
+}
+
+.consultation__inner {
+    @include flexC;
+    padding: 80px 169px 27px 174px;
+}
+
+.consultation__title{
+    font-weight: bold;
+    font-size: 35px;
+    line-height: 60px; 
+    letter-spacing: 1.2px;
+    color: $mainColor;
+}
+
+.stars{
+    margin-top: 15px;
+    margin-bottom: 15px;
+    @include flexR;
+    &__img{
+        background-color: $backStars;
+        padding: 5px 4.5px;
+        align-content: center;
+        width: 30px;
+        margin-right: 2.5px;
+        &--half{
+            background: linear-gradient(to right, $backStars 50%, $backStarsHalf 50%);
+        } 
+    } 
+}
+
+.consultation__text{
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 30px;
+    text-align: center;
+    margin-bottom: 23px;
+    color: $backStars;
+    &--main-color {
+        color: $mainColor;
+    }
+}
+
+.consultation__cards{
+    @include flexR;
+    align-items: flex-start;
+    margin-bottom: 57px; 
+}
+
+.concept__card{
+    @include flexC;    
+    justify-content: flex-start;
+    &--card1 {
+        position: relative;
+        margin-top: 26px;
+        margin-right: 43px;           
+        & .concept__img{
+        width:339px;
+        }
+        & .concept__subtitle{
+            max-width:315px;
+        } 
+    }
+    &--card2 {
+        position: relative;
+        margin-top: 23px;
+        margin-right: 39px;           
+        & .concept__img{
+        width:328px;
+        margin-bottom: 11px;
+        }
+        & .concept__subtitle{
+            max-width:333px;
+        } 
+    }
+    &--card3 {
+        position: relative;
+        margin-top: 70px;          
+        & .concept__img{
+        width: 348px;
+        }
+        & .concept__subtitle{
+            max-width:331px;
+        } 
+    }
+}
+
+
+.concept__title{
+    // text-align: center;
+    font-weight: bold;
+    font-size: 25px;
+    line-height: 40px;
+    letter-spacing: 0.84px;
+    color: $mainColor;
+    margin-bottom: 13px;
+}
+
+.concept__subtitle{
+    text-align: center;
+    font-size: 18px;
+    font-style: normal;
+    line-height: 32px;
+    color: $mainColor;
+
+}
+
+.arrow1 {
+    width: 90px;
+    position: absolute;
+    right: -50px;
+}
+.arrow2 {
+    width: 93px;
+    position: absolute;
+    top: 225px;
+    right: -40px;
+}
+.arrow3 {
+    width: 110px;
+}
+
+

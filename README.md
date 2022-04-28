@@ -1,1 +1,1 @@
-# DiplomaManual
+# Diplom-project

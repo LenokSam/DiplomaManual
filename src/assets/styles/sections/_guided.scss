@@ -1,0 +1,81 @@
+.guided__inner {
+    padding-top: 100px;
+    padding-bottom: 98px;
+}
+
+.guided__tools {
+    @include flexC;
+
+    &-title{
+        margin-bottom: 36px;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 40px;
+        line-height: 60px;
+        text-align: center;
+        letter-spacing: 1.2px;
+        color: $mainColor;
+    }
+    &-subtitle{
+        margin-bottom: 34px;
+        max-width: 558px;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 23px;
+        line-height: 43px;
+        text-align: center;
+        letter-spacing: 0.72px;
+        color: $mainColor;
+    }
+}
+
+.guided__cards {
+    @include flexR;
+    justify-content: center;
+}
+.guided__card {
+    @include flexC;
+    align-items: flex-start;
+    margin-right: 10px;
+    &:last-child {
+        margin-right: 0;    
+    }
+    
+    // &--card4{
+    //     margin-right: 0;
+    // }
+    &-image{
+        margin-bottom: 24px;
+        width: 300px;
+    } 
+    &-text{
+        margin-bottom: 77px;
+        max-width: 270px;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 24px;
+        line-height: 40px;
+        letter-spacing: 0.72px;
+        color: $mainColor;
+    }
+
+    &-link{
+        font-style: normal;
+        font-weight: bold;
+        font-size: 14px;
+        line-height: 20px;
+        letter-spacing: 2.1px;
+        text-transform: uppercase;
+        color: $mainColor;
+        padding-bottom: 4px;
+        border-bottom-style: solid;
+        border-color: $mainColor;
+        border-bottom-width: 1px;
+        &:hover{
+            color: $c-darkred;
+            border-color: $c-darkred;
+        }
+    }
+    
+}
+

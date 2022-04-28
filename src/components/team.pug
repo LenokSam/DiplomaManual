@@ -1,0 +1,22 @@
+section.team 
+    .container 
+        .team__inner
+            .team__title Meet our medical team
+            .team__subtitle Enabling the mission of revolutionising how men approach health, they are at the core of the men’s wellness platform. 
+             span
+                a.team__subtitle--link(href="#") Meet our team.
+            .team__staffer 
+                mixin stafferCard(way, name, position)
+                    .staffer__card
+                        img.staffer__card-image(src=way, alt="#")
+                        p.staffer__card-name= name
+                        p.staffer__card-position= position
+                +stafferCard ('assets/images/team/card1.png','Earim Chaudry, MD', 'Medical Director')
+                +stafferCard ('assets/images/team/card2.png','Ryan Benbow', 'Pharmacist, Ind. Prescriber')
+                +stafferCard ('assets/images/team/card3.png','Soheb Ganchi', 'Pharmacist, Ind. Prescriber')
+            .team__tools
+                img.team__tools-logo(src="assets/images/team/phone.png", alt="")
+                .team__tools-text 
+                    p.tools-text_title Get a free consultation
+                    p.tools-text_subtitle Speak with one of our clinicians and get personalised advice. Monday to Friday 9am-4:30pm
+                a.view__link.view__link--tools Book Consultation

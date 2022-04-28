@@ -1,0 +1,20 @@
+.services__inner  {
+    @include flexR;
+    padding: 45px
+}
+.services__card {
+    @include flexR;
+    justify-content: flex-start;
+    width:346px;
+
+}
+.services__card_img {
+    width: 50px;
+    margin-right: 14px;
+}
+
+.services__card_text{
+    font-size: 16px;
+    line-height: 29px;
+    color: $mainColor;
+}

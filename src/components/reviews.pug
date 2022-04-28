@@ -1,0 +1,57 @@
+section.reviews 
+    .container 
+        .reviews__inner 
+            .reviews-text 
+                h3.reviews-text__title Our medical team work round the clock to bring you the most effective treatments available in the UK
+                p.reviews-text__subtitle Dr. Earim Chaudry, Medical Director
+                img.reviews-text__image(src="assets/images/reviews/director.png", alt="")
+                .reviews-text__stars 
+                    include icons/reviews/bigstar
+                    .stars__text
+                        include icons/reviews/startext
+                    include icons/reviews/star    
+                p.reviews-text__text Based on  
+                    span.reviews-text__text--number 1169  
+                    span.reviews-text__text reviews
+            .reviews-cards.slider__wrapper
+                input.slide-radio.slide-radio1(type="radio" name="slider" id="slider_1" checked)
+                input.slide-radio.slide-radio2(type="radio" name="slider" id="slider_2")
+                input.slide-radio.slide-radio1(type="radio" name="slider" id="slider_3")
+                input.slide-radio.slide-radio4(type="radio" name="slider" id="slider_4")
+
+                .slider__cards
+                    .next.control
+                        label.numb.numb1(for="slider_1")
+                        label.numb.numb2(for="slider_2") 
+                        label.numb.numb3(for="slider_3") 
+                        label.numb.numb4(for="slider_4") 
+                    .previous.control
+                        label.numb.numb1(for="slider_1")
+                        label.numb.numb2(for="slider_2")
+                        label.numb.numb3(for="slider_3")
+                        label.numb.numb4(for="slider_4")              
+                    .slider.slide1
+                        .slide-reviews 
+                            .slide-reviews__stars 
+                                include icons/reviews/reviewstar
+                            p.slide-reviews__text Quick and discreet and saved me a trip to the GP.
+                            p.slide-reviews__name Zander 
+                    .slider.slide2
+                        .slide-reviews    
+                            .slide-reviews__stars 
+                                include icons/reviews/reviewstar
+                            p.slide-reviews__text Great product love the smell and the feeling.
+                            p.slide-reviews__name Simon
+                    .slider.slide3
+                        .slide-reviews     
+                            .slide-reviews__stars 
+                                include icons/reviews/reviewstar
+                            p.slide-reviews__text Great product, restores confidence and performance!
+                            p.slide-reviews__name Francis
+                    .slider.slide4
+                        .slide-reviews    
+                            .slide-reviews__stars  
+                                include icons/reviews/reviewstar
+                            p.slide-reviews__text It’s just such a fantastic way to improve my health.
+                            p.slide-reviews__name Damon
+                

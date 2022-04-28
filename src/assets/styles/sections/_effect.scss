@@ -1,0 +1,105 @@
+.effect__inner {
+    @include flexR;
+    background-color: $backEffect;
+    margin: 0 20px;
+    padding: 0 48px 0 40px;
+}
+
+
+// TOOLS
+
+.effect__tools {
+    @include flexC;
+    padding: 119px 0 115px 0;
+    align-items: flex-start;
+    .new__effect{
+        background-color: $backNew;
+        width: 42px;
+        padding-top: 4px;
+        padding-bottom: 4px;
+        text-align: center;
+        font-weight: bold;
+        font-size: 10px;
+        line-height: 15px;
+        letter-spacing: 1.5px;
+        text-transform: uppercase;
+        color: $mainColor;
+        border: 1px solid transparent;
+        &:hover{
+            color: $effectNewHover;
+            border: 1px solid $effectNewHover;
+        }
+    }
+    &-title{
+        font-weight: bold;
+        font-size: 36px;
+        line-height: 60px;
+        letter-spacing: 1.2px;
+        color: $mainColor;
+        margin-top: 27px;
+        margin-bottom: 37px;
+    }
+    &-text{
+        font-size: 16px;
+        line-height:29px;
+        color: $mainColor;
+        max-width: 602px;
+        margin-bottom: 37px;
+    }
+}
+
+.view__link--effect{
+    background-color: $backEffectView;
+    color: $textEffectView;
+    max-width: 320px;
+    margin-bottom: 40px;
+    &:hover{
+        background-color: $effectViewHover;
+        color: $textEffectView;
+    }
+}
+
+.effect__checkmark{
+    @include flexR;
+    &-text{
+        padding-left:36px ;
+        font-size: 16px;
+        line-height: 29px;
+        color: $mainColor;
+        @include flexR;
+        &::before {
+            margin-right: 7px;
+            content: "";
+            width: 10px;
+            height: 5px;
+            border: 2px solid black;
+            border-right: transparent ;
+            border-top: transparent ;
+            transform: rotate(-45deg);
+        }
+    }
+}
+
+// CARDS
+
+.effect__cards {
+    @include flexR;
+    flex-wrap: wrap;
+    padding: 48px 0 48px 130px;
+    max-width: 620px;
+}
+
+.effect__card {
+    @include flexC;
+    padding-top: 22px;
+    padding-bottom: 21px;
+    margin-bottom:16px ;    
+    width: 150px;
+    background-color: $backEffectCard;
+
+    &-title{
+        font-size: 17px;
+        line-height: 30px;
+        color: $mainColor;
+    }
+}

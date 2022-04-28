@@ -1,0 +1,60 @@
+.tools {
+    background-image: url(../../assets/images/tools/background_promo.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.tools__inner{
+    padding-top: 170px;
+    padding-bottom: 170px;
+}
+
+.tools_menu{
+    @include flexC;
+}
+.tools__title{
+    font-weight: bold;
+    font-size: 54px;
+    line-height: 80px;
+    letter-spacing: 1.8px;
+    color: $mainColor;
+    width:500px;
+    text-align: center;
+    margin-bottom: 23px;
+}
+.tools__subtile{
+    width: 481px;
+    font-size: 18px;
+    line-height: 30px;
+    color: $mainColor;
+    text-align: center;
+    margin-bottom: 41px;
+}
+.getstarted__link{
+    padding:15px 100px 10px;
+    text-align: center;
+    background:$toolsLink;
+    font-size: 14px;
+    line-height: 20px;
+    letter-spacing: 2.1px;
+    text-transform: uppercase;
+    color: $toolsGetstarted;
+    margin-bottom: 20px;
+    &:hover {
+        background:$toolsHover;
+    }
+}
+.view__link{
+    padding:15px 75px 10px;
+    text-align: center;
+    border: 2px solid $toolsLink;
+    font-size: 14px;
+    line-height: 20px;
+    letter-spacing: 2.1px;
+    text-transform: uppercase;
+    color: $toolsLink;
+    &:hover {
+        border:2px solid #0B3B3C;
+        color: $toolsHover;
+    }
+}

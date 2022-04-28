@@ -1,0 +1,17 @@
+@import "util/normalize";
+@import "util/global";
+@import "util/mixins";
+
+//другие секции
+
+@import "sections/header";
+@import "sections/tools";
+@import "sections/services";
+@import "sections/consultation";
+@import "sections/products";
+@import "sections/effect";
+@import "sections/reviews";
+@import "sections/team";
+@import "sections/note";
+@import "sections/guided";
+@import "sections/footer";

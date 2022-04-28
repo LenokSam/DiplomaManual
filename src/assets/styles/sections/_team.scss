@@ -1,0 +1,102 @@
+.team__inner {
+    @include flexC;
+    padding: 120px 145px 165px 145px;
+}    
+
+.team__title {
+    margin-bottom: 30px;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 35px;
+    line-height: 60px;
+    text-align: center;
+    letter-spacing: 1.2px;
+    color: $mainColor;
+} 
+
+.team__subtitle {
+    margin-bottom: 30px;
+    max-width: 832px;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 24px;
+    line-height: 43px;
+    text-align: center;
+    letter-spacing: 0.72px;
+    color: $mainColor;
+    &--link{
+        color: $c-darkred;
+    }
+}
+.team__staffer {
+    @include flexR;
+    margin-bottom: 50px;
+    .staffer__card {
+        @include flexC;
+        align-items: start;
+        margin-right: 43px;
+        &-image{
+            width: 265px;
+            margin-bottom: 37px;
+        }
+        &-name {                
+            font-style: normal;
+            font-weight: normal;
+            font-size: 18px;
+            line-height: 32px;
+            color: $mainColor;
+        }
+        &-position {    
+            font-style: normal;
+            font-weight: normal;
+            font-size: 16px;
+            line-height: 29px;
+            color: $textTeam;
+        }
+        &:last-child {
+            margin-right: 0;
+        }
+    }
+}
+.team__tools{
+    @include flexR;
+    padding: 40px 75px 0 24px;
+    border-top-style: solid;
+    border-color: $borderTeam;
+    border-bottom-width: 1px;
+    &-logo{
+        width: 40px;
+        margin-right: 9px;
+    }
+    &-text{
+        @include flexC;
+        align-items: flex-start;
+        margin-right: 23px;
+        .tools-text_title {
+            font-style: normal;
+            font-weight: normal;
+            font-size: 20px;
+            line-height: 43px;
+            letter-spacing: 0.72px;
+            color: $mainColor;
+        }
+        .tools-text_subtitle {
+            font-style: normal;
+            font-weight: normal;
+            font-size: 15px;
+            line-height: 29px;
+            color: $textTeam;
+        }
+    }
+}
+
+.view__link--tools{
+    background-color: $c-darkred;
+    color: $c-white;
+    max-width: 330px;
+    text-transform: none;
+    &:hover{
+        background-color: $mainColor;
+        color: $c-white;
+    }
+}

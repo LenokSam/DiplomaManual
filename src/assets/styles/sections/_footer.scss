@@ -1,0 +1,136 @@
+.footer {
+    background-color: $mainColor;
+}
+
+.footer__inner{
+    padding: 40px 230px;
+}
+
+// TEXT
+.footer__text-white  {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 25px;
+    letter-spacing: 0.84px;
+    color: $c-white;
+}
+.footer__text-grey {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 22px;
+    letter-spacing: 0.72px;
+    color: $textFooter;
+}
+// NAV
+.footer__nav {
+    @include flexR;
+    align-items: flex-start;
+    margin-bottom: 85px;
+}
+
+.contacts{
+    @include flexC;    
+    align-items: flex-start;
+    margin-right: 59px;
+    width: 221px;
+    &__title{
+        font-weight: bold;
+        font-size: 18px;
+        line-height: 25px;
+        letter-spacing: 2.7px;
+        text-transform: uppercase;
+        color: $c-white;
+    }
+    &__subtitle{
+        color: $textFooter;
+        margin-bottom: 10px;       
+    }
+    &__card{
+        @include flexR;  
+        align-items: flex-start;
+        margin-bottom: 23px;
+        &:last-child {
+            margin-bottom: 0;
+        }         
+        &-logo{
+            background-color: $c-white;
+            width: 20px;
+            height: 26px;
+            border-radius: 50%;
+            align-content: center;
+            margin-right: 10px;
+        }
+        &-text{
+            @include flexC;
+        }        
+    }
+}
+
+
+.footer-nav__inner {
+    @include flexC;
+    align-items: flex-start; 
+    &--learn{
+        margin-right: 285px;
+    }  
+    &--manual{
+        margin-right: 159px;
+    }  
+         
+    .footer-nav__link{
+        margin-top: 14px;        
+    }
+}
+
+// NETWORK
+.network {
+    @include flexR;
+    margin-bottom: 50px;
+    align-items: center;
+        &__logo{
+        width: 168px;
+    }
+    .social-network{
+        @include flexR;
+        width: 172px;
+    }
+    &__link{
+        @include flexR;
+        justify-content: center;
+        border: 1px solid $textFooter;
+        border-radius: 50%;
+        width: 48px;
+        height: 53px;
+        align-content: center;
+        margin-right: 13px;
+    }  
+}
+
+
+// OTHER
+.other{
+    @include flexR;
+    justify-content: flex-start;
+    margin-bottom: 11px;
+    &__link{
+        margin-right: 10px;
+        font-size: 12px;
+        line-height: 22px;
+        &:last-child{
+            margin-right: 0;
+        }
+    }
+}
+
+.pharmacies{
+    margin-bottom: 9px;
+    font-size: 11px;
+    line-height: 22px;
+}
+
+.copyright{
+    font-size: 12px;
+    line-height: 22px;
+}
